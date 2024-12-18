@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration forms</title>
+</head>
+<body>
+    <h3>Fill in the below to book your sessions</h3>
+    <p>This page consist of forms and particulers for this year registration for TechCon Conference 2024</p>
+    <form action="/submit-registration" method="post">
+        <!-- Username Field -->
+        <label for="username">Username (4-16 characters):</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="16" placeholder="Username"><br>
+
+        <!-- Password Field -->
+        <p><label for="password">Password (min. 6 characters):</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Password"><br></p>
+
+        <!-- Email Field -->
+        <p><label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@domain.com"><br></p>
+
+        <!-- Age Field -->
+        <p><label for="age">Age (optional):</label>
+        <input type="number" id="age" name="age" min="1" max="120" placeholder="Age"><br></p>
+
+        <!-- Terms of Service Field -->
+        <p><label for="terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the Terms of Service
+        </label><br></p>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+    <p><a href="schedule.html" target="_blank">Schedule Page</a></p>
+</body>
+</html>
